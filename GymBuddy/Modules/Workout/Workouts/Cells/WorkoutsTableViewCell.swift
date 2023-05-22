@@ -79,9 +79,9 @@ final class WorkoutsTableViewCell: UITableViewCell {
 
   // MARK: - Helpers
 
-  func configure(text: String) {
+  func configure(text: String, description: String, date: Date) {
     titleLabel.text = text
-    subtitleLabel.text = "cardio"
+    subtitleLabel.text = description
     dateLabel.text = "Ultimo treino: 19/03/2023"
   }
 
