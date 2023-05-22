@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		928CD0FA29F4C5E000DB932C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CD0F929F4C5E000DB932C /* UIColorExtensions.swift */; };
+		928CD0FE29F5D2EE00DB932C /* WorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CD0FD29F5D2EE00DB932C /* WorkoutsViewModel.swift */; };
+		928CD10029F5D2FB00DB932C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CD0FF29F5D2FB00DB932C /* Workout.swift */; };
 		92C133CC29E0CBDF00675C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C133CB29E0CBDF00675C31 /* AppDelegate.swift */; };
 		92C133CE29E0CBDF00675C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C133CD29E0CBDF00675C31 /* SceneDelegate.swift */; };
-		92C133D029E0CBDF00675C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C133CF29E0CBDF00675C31 /* ViewController.swift */; };
-		92C133D329E0CBDF00675C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C133D129E0CBDF00675C31 /* Main.storyboard */; };
 		92C133D529E0CBE500675C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C133D429E0CBE500675C31 /* Assets.xcassets */; };
 		92C133D829E0CBE500675C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C133D629E0CBE500675C31 /* LaunchScreen.storyboard */; };
+		92C133E229E0CC6B00675C31 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C133E129E0CC6B00675C31 /* WorkoutsViewController.swift */; };
+		92C133E429E0CC7900675C31 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C133E329E0CC7900675C31 /* WorkoutsView.swift */; };
+		92F1515129E4B422007D0D9C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1515029E4B422007D0D9C /* BaseView.swift */; };
+		92F1515429E4B607007D0D9C /* WorkoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1515329E4B607007D0D9C /* WorkoutsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		928CD0F929F4C5E000DB932C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		928CD0FD29F5D2EE00DB932C /* WorkoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewModel.swift; sourceTree = "<group>"; };
+		928CD0FF29F5D2FB00DB932C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		92C133C829E0CBDF00675C31 /* GymBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C133CB29E0CBDF00675C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C133CD29E0CBDF00675C31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92C133CF29E0CBDF00675C31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92C133D229E0CBDF00675C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92C133D429E0CBE500675C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92C133D729E0CBE500675C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92C133D929E0CBE500675C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C133E129E0CC6B00675C31 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		92C133E329E0CC7900675C31 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
+		92F1515029E4B422007D0D9C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		92F1515329E4B607007D0D9C /* WorkoutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		928CD0F829F4C52700DB932C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				928CD0F929F4C5E000DB932C /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		928CD0FB29F5D0C700DB932C /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				92C133E029E0CC1F00675C31 /* Workouts */,
+				928CD0FC29F5D0E100DB932C /* WorkoutDetail */,
+				928CD0FF29F5D2FB00DB932C /* Workout.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		928CD0FC29F5D0E100DB932C /* WorkoutDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WorkoutDetail;
+			sourceTree = "<group>";
+		};
 		92C133BF29E0CBDF00675C31 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +91,43 @@
 		92C133CA29E0CBDF00675C31 /* GymBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				928CD0F829F4C52700DB932C /* Extensions */,
+				92C133DF29E0CC1600675C31 /* Modules */,
 				92C133CB29E0CBDF00675C31 /* AppDelegate.swift */,
 				92C133CD29E0CBDF00675C31 /* SceneDelegate.swift */,
-				92C133CF29E0CBDF00675C31 /* ViewController.swift */,
-				92C133D129E0CBDF00675C31 /* Main.storyboard */,
+				92F1515029E4B422007D0D9C /* BaseView.swift */,
 				92C133D429E0CBE500675C31 /* Assets.xcassets */,
 				92C133D629E0CBE500675C31 /* LaunchScreen.storyboard */,
 				92C133D929E0CBE500675C31 /* Info.plist */,
 			);
 			path = GymBuddy;
+			sourceTree = "<group>";
+		};
+		92C133DF29E0CC1600675C31 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				928CD0FB29F5D0C700DB932C /* Workout */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		92C133E029E0CC1F00675C31 /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				92F1515229E4B5D7007D0D9C /* Cells */,
+				92C133E129E0CC6B00675C31 /* WorkoutsViewController.swift */,
+				92C133E329E0CC7900675C31 /* WorkoutsView.swift */,
+				928CD0FD29F5D2EE00DB932C /* WorkoutsViewModel.swift */,
+			);
+			path = Workouts;
+			sourceTree = "<group>";
+		};
+		92F1515229E4B5D7007D0D9C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				92F1515329E4B607007D0D9C /* WorkoutsTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +190,6 @@
 			files = (
 				92C133D829E0CBE500675C31 /* LaunchScreen.storyboard in Resources */,
 				92C133D529E0CBE500675C31 /* Assets.xcassets in Resources */,
-				92C133D329E0CBDF00675C31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +200,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C133D029E0CBDF00675C31 /* ViewController.swift in Sources */,
+				92F1515429E4B607007D0D9C /* WorkoutsTableViewCell.swift in Sources */,
+				928CD0FA29F4C5E000DB932C /* UIColorExtensions.swift in Sources */,
 				92C133CC29E0CBDF00675C31 /* AppDelegate.swift in Sources */,
 				92C133CE29E0CBDF00675C31 /* SceneDelegate.swift in Sources */,
+				928CD0FE29F5D2EE00DB932C /* WorkoutsViewModel.swift in Sources */,
+				928CD10029F5D2FB00DB932C /* Workout.swift in Sources */,
+				92F1515129E4B422007D0D9C /* BaseView.swift in Sources */,
+				92C133E429E0CC7900675C31 /* WorkoutsView.swift in Sources */,
+				92C133E229E0CC6B00675C31 /* WorkoutsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92C133D129E0CBDF00675C31 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92C133D229E0CBDF00675C31 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		92C133D629E0CBE500675C31 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +352,6 @@
 				INFOPLIST_FILE = GymBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +363,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +379,6 @@
 				INFOPLIST_FILE = GymBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
