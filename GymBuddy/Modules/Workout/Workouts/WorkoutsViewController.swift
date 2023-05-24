@@ -16,9 +16,29 @@ final class WorkoutsViewController: UIViewController {
   // MARK: - Overrides
   override func viewDidLoad() {
     super.viewDidLoad()
-    view = baseView
-    title = "GYM BUDDY"
     
+    setupView()
+    fetchData()
+    
+    baseView.tableView.dataSource = self
+    baseView.tableView.delegate = self
+  }
+  
+  private func setupView(){
+    view = baseView
+    title = "Workouts"
+    navigationController?.navigationBar.prefersLargeTitles = true
+    navigationController?.navigationBar.largeTitleTextAttributes = [
+      NSAttributedString.Key.foregroundColor: UIColor.text,
+      NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 30)
+    ]
+    
+    let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+    addButton.tintColor = .text
+    navigationItem.rightBarButtonItem = addButton
+  }
+  
+  private func fetchData(){
     viewModel?.loadData(completion: { success in
       guard success else {
         debugPrint("deu ruim!")
@@ -29,9 +49,12 @@ final class WorkoutsViewController: UIViewController {
       self.workouts = workouts
       self.baseView.tableView.reloadData()
     })
-    
-    baseView.tableView.dataSource = self
-    baseView.tableView.delegate = self
+  }
+  
+  // MARK: - Actions
+  
+  @objc func addButtonTapped(){
+    print("add")
   }
 }
 

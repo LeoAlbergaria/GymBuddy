@@ -22,9 +22,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       let viewController = WorkoutsViewController()
       viewController.viewModel = viewModel
       
+      let navControler = UINavigationController()
+      navControler.viewControllers = [viewController]
+      
       window = UIWindow(frame: windowScene.coordinateSpace.bounds)
       window?.windowScene = windowScene
-      window?.rootViewController = viewController
+      window?.rootViewController = navControler
       window?.makeKeyAndVisible()
     }
 
