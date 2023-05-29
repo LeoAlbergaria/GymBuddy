@@ -29,12 +29,14 @@ final class WorkoutsViewController: UIViewController {
     title = "Workouts"
     navigationController?.navigationBar.prefersLargeTitles = true
     navigationController?.navigationBar.largeTitleTextAttributes = [
-      NSAttributedString.Key.foregroundColor: UIColor.text,
+      NSAttributedString.Key.foregroundColor: UIColor.white,
       NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 30)
     ]
+    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    navigationController?.navigationBar.barTintColor = .black
     
     let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
-    addButton.tintColor = .text
+    addButton.tintColor = .white
     navigationItem.rightBarButtonItem = addButton
   }
   
@@ -54,7 +56,32 @@ final class WorkoutsViewController: UIViewController {
   // MARK: - Actions
   
   @objc func addButtonTapped(){
-    print("add")
+    let alertController = UIAlertController(title: "Add new workout", message: nil, preferredStyle: .alert)
+    
+    alertController.addTextField { textField in
+      textField.placeholder = "Name"
+    }
+    
+    alertController.addTextField { textField in
+      textField.placeholder = "Description"
+    }
+    
+    let addAction = UIAlertAction(title: "Add", style: .default) { [weak self, weak alertController] _ in
+      guard let itemName = alertController?.textFields?[0].text,
+            let itemDescription = alertController?.textFields?[1].text else {
+        return
+      }
+      
+      self?.viewModel?.newWorkout(title: itemName, description: itemDescription)
+      self?.fetchData()
+    }
+    
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+    
+    alertController.addAction(addAction)
+    alertController.addAction(cancelAction)
+    
+    present(alertController, animated: true, completion: nil)
   }
 }
 

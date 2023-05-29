@@ -53,6 +53,5 @@ extension UIColor {
 
 // MARK: - Custom Colors
 extension UIColor {
-  static let text = UIColor(hex: "E0FBFC")
-  static let main = UIColor(hex: "293241")
+  static let main = UIColor(hex: "42ab49")
 }

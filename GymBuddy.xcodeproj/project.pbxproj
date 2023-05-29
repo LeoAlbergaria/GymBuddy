@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DA9911E2A23C59D00CEF9D8 /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9911D2A23C59D00CEF9D8 /* UserDefaultsExtensions.swift */; };
 		928CD0FA29F4C5E000DB932C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CD0F929F4C5E000DB932C /* UIColorExtensions.swift */; };
 		928CD0FE29F5D2EE00DB932C /* WorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CD0FD29F5D2EE00DB932C /* WorkoutsViewModel.swift */; };
 		928CD10029F5D2FB00DB932C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CD0FF29F5D2FB00DB932C /* Workout.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DA9911D2A23C59D00CEF9D8 /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
 		928CD0F929F4C5E000DB932C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		928CD0FD29F5D2EE00DB932C /* WorkoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewModel.swift; sourceTree = "<group>"; };
 		928CD0FF29F5D2FB00DB932C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				928CD0F929F4C5E000DB932C /* UIColorExtensions.swift */,
+				5DA9911D2A23C59D00CEF9D8 /* UserDefaultsExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				92F1515429E4B607007D0D9C /* WorkoutsTableViewCell.swift in Sources */,
 				928CD0FA29F4C5E000DB932C /* UIColorExtensions.swift in Sources */,
+				5DA9911E2A23C59D00CEF9D8 /* UserDefaultsExtensions.swift in Sources */,
 				92C133CC29E0CBDF00675C31 /* AppDelegate.swift in Sources */,
 				92C133CE29E0CBDF00675C31 /* SceneDelegate.swift in Sources */,
 				928CD0FE29F5D2EE00DB932C /* WorkoutsViewModel.swift in Sources */,

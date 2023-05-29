@@ -9,7 +9,7 @@ import Foundation
 
 typealias Workouts = [Workout]
 
-struct Workout {
+struct Workout: Codable {
   let title: String?
   let description: String?
   let lastDate: Date?

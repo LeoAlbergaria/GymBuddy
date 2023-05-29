@@ -13,14 +13,14 @@ final class WorkoutsTableViewCell: UITableViewCell {
 
   lazy var titleLabel: UILabel = {
     let label = UILabel()
-    label.textColor = .text
+    label.textColor = .white
     label.font = UIFont.boldSystemFont(ofSize: 24.0)
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
   lazy var subtitleLabel: UILabel = {
     let label = UILabel()
-    label.textColor = .text
+    label.textColor = .white
     label.font = UIFont.systemFont(ofSize: 14.0)
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
@@ -38,7 +38,7 @@ final class WorkoutsTableViewCell: UITableViewCell {
 
   lazy var dateLabel: UILabel = {
     let label = UILabel()
-    label.textColor = .text
+    label.textColor = .white
     label.font = UIFont.systemFont(ofSize: 14.0)
     label.translatesAutoresizingMaskIntoConstraints = false
     return label

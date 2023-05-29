@@ -9,6 +9,8 @@ import Foundation
 
 protocol WorkoutsViewModelProtocol {
   func loadData(completion: @escaping (Bool) -> Void)
+  func newWorkout(title: String, description: String)
+  
   var model: Workouts { get }
 }
 
@@ -18,10 +20,16 @@ class WorkoutsViewModel {
 
 extension WorkoutsViewModel: WorkoutsViewModelProtocol {
   func loadData(completion: @escaping (Bool) -> Void) {
-    model.append(Workout(title: "Peito", description: "Treino de peito", lastDate: Date()))
-    model.append(Workout(title: "Costas", description: "Treino de costas", lastDate: Date()))
-    model.append(Workout(title: "Perna", description: "Treino de perna", lastDate: Date()))
+    guard let workouts = UserDefaults.getWorkouts() else {
+      completion(false)
+      return
+    }
     
+    model = workouts
     completion(true)
+  }
+  
+  func newWorkout(title: String, description: String) {
+    UserDefaults.setWorkouts(Workout(title: title, description: description, lastDate: Date()))
   }
 }
